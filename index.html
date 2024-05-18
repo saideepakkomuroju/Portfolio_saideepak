@@ -299,31 +299,21 @@
           <div class="page-back">
             <h1 class="title">Contact Me!</h1>
 
-            <div class="contact-box">
-              <form action="#">
-                
-                <div><input
-                  type="text"
-                  class="field"
-                  placeholder="Full Name"
-                  required
-                />
-                <input
-                  type="email"
-                  class="field"
-                  placeholder="Email Address"
-                  required
-                />
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  class="field"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
+         <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="content-left">
+            <div class="contact-left-title">
+                <h2>Contact Me!</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="350de910-6ba7-4300-a7f3-aa4da7f54b0c">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+            <input type="mobile number" name="mobile number" placeholder="Your mobile number" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        
+    </div>
                <input type="submit" class="btn" value="Send Message" />
               </form>
             </div>
